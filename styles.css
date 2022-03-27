@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  background-clip: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/** NAVIGATION BAR */
+nav {
+  height: 50px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+nav > a {
+  margin-left: 20px;
+  color: #eeff04;
+  font-style: italic;
+  font-size: 40px;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}
+
+nav ul a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 0 14px;
+}
+
+nav ul a:hover {
+  color: #eeff04;
+}
+
+nav div {
+  margin-right: 20px;
+}
+
+nav div button {
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  background: none;
+  border: 2px solid #eeff04;
+  border-radius: 5px;
+}
+
+nav div button:hover {
+  color: #000;
+  background: #eeff04;
+}
+
+body .jumbotron {
+  color: #fff;
+  margin-top: 50px;
+  position: relative;
+}
+
+body .jumbotron > div {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .jumbotron > div > div {
+  margin: 10px 0;
+}
+
+body .jumbotron button {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  background: none;
+  border: 2px solid #eeff04;
+  border-radius: 5px;
+}
+
+body .jumbotron button:hover {
+  color: #000;
+  background: #eeff04;
+}
+
+body .jumbotron img {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+body .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0.5%;
+}
+
+body .products h2 {
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+body .products .card {
+  margin: 0.5%;
+  background-color: #eeff04;
+  width: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+body .products .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body .products .card > h3 {
+  margin: 0 10px;
+  margin-top: 10px;
+  height: 45px;
+}
+
+body .products .card > p {
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+body .products .card div {
+  margin: 0 10px;
+  margin-bottom: 10px;
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+body .products .card div a {
+  text-align: center;
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px 20px;
+  color: #000;
+  background: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+body .products .card div a:hover {
+  color: #fff;
+  background: #333;
+}
+
+body .products .card div p {
+  color: #ff0000;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+body .contact {
+  text-align: center;
+}
+
+body .contact h3 {
+  font-style: italic;
+  width: 100%;
+}
+
+body .contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .contact form input {
+  margin: 2px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 75%;
+}
+
+body .contact form input:first-child {
+  height: 50px;
+  background: none;
+  border: 1px solid #ff0000;
+}
+
+body .contact form input:last-child {
+  cursor: pointer;
+  color: #eeff04;
+  border: 0;
+  background-color: #ff0000;
+}
+
+footer {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111;
+  font-size: 17px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15vh 20px;
+}
+
+footer div > h2 {
+  width: 100%;
+  color: #eeff04;
+}
+
+footer div > p {
+  margin: 20px 0;
+}
+
+footer div > ul {
+  width: 30%;
+  list-style-position: inside;
+  padding: 0;
+}
+
+footer div > ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer div > ul li a:hover {
+  color: #eeff04;
+}
+
+footer > p {
+  border-top: 2px solid #ff0000;
+  padding: 25px 0;
+  color: #8f8f8f;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,208 @@
+$theme: #eeff04
+$theme2: #ff0000
+
+@mixin untukButton($warnaTeks, $warnaTeks2, $warnaButton)
+    cursor: pointer
+    margin: 2px
+    padding: 5px 20px
+    color: $warnaTeks
+    background: none
+    border: 2px solid $warnaButton
+    border-radius: 5px
+    &:hover
+        color: $warnaTeks2
+        background: $warnaButton
+
+*
+    margin: 0
+    background-clip: border-box
+
+a
+    text-decoration: none
+
+img
+    width: 100%
+
+/** NAVIGATION BAR */
+nav
+    min-height: 50px
+    overflow: hidden
+    background-color: #333
+    position: fixed
+    top: 0
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    z-index: 1
+
+    > a
+        margin-left: 20px
+        color: $theme
+        font-style: italic
+        font-size: 40px
+
+    ul
+        text-align: center
+        list-style-type: none
+        list-style-type: none
+        margin: 0
+        padding: 15px
+
+        li
+            display: inline
+            font-family: "Fira Sans", sans-serif
+            font-size: 17px
+
+        a
+            color: #f2f2f2
+            text-decoration: none
+            padding: 0 14px
+            &:hover
+                color: $theme
+
+    div
+        margin-right: 20px
+
+        button
+            @include untukButton(#fff, #000, $theme)
+
+body
+    .jumbotron
+        color: #fff
+        margin-top: 50px
+        position: relative
+
+        > div
+            position: absolute
+            text-align: center
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            > div
+                margin: 10px 0
+
+        button
+            text-transform: uppercase
+            @include untukButton(#fff, #000, $theme)
+
+        img
+            filter: brightness(20%)
+            height: 100vh
+            object-fit: cover
+            object-position: top
+
+    .products
+        display: flex
+        flex-wrap: wrap
+        padding: 0 0.5%
+
+        h2
+            font-style: italic
+            text-align: center
+            width: 100%
+
+        .card
+            margin: 0.5%
+            background-color: $theme
+            width: 24%
+            display: flex
+            flex-direction: column
+            border-radius: 10px
+
+            img
+                border-top-left-radius: 10px
+                border-top-right-radius: 10px
+
+            > h3
+                margin: 0 10px
+                margin-top: 10px
+                height: 45px
+
+            > p
+                margin: 0 10px
+                margin-top: 10px
+
+            div
+                margin: 0 10px
+                margin-bottom: 10px
+                margin-top: auto
+                display: flex
+                flex-direction: column-reverse
+
+                a
+                    text-align: center
+                    @include untukButton(#000, #fff, #333)
+                    margin-top: 10px
+
+                p
+                    color: $theme2
+                    font-size: 100% * 1.2
+                    margin-top: 10px
+
+    .contact
+        text-align: center
+
+        h3
+            font-style: italic
+            width: 100%
+
+        form
+            display: flex
+            flex-direction: column
+
+            input
+                margin: 2px auto
+                padding: 10px 20px
+                border-radius: 5px
+                width: 75%
+
+                &:first-child
+                    height: 50px
+                    background: none
+                    border: 1px solid $theme2
+
+                &:last-child
+                    cursor: pointer
+                    color: $theme
+                    border: 0
+                    background-color: $theme2
+
+footer
+    color: #fff
+    display: flex
+    flex-direction: column
+    background-color: #111
+    font-size: 17px
+
+    div
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        padding: 15vh 20px
+
+        > h2
+            width: 100%
+            color: $theme
+
+        > p
+            margin: 20px 0
+
+        > ul
+            width: 30%
+            list-style-position: inside
+            padding: 0
+            li
+                a
+                    color: #fff
+                    text-decoration: none
+                    &:hover
+                        color: $theme
+
+    > p
+        border-top: 2px solid $theme2
+        padding: 25px 0
+        color: #8f8f8f
+        text-align: center
